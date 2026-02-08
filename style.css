@@ -1,0 +1,50 @@
+body {
+    margin: 0px;
+    background: black;
+    color: white;
+}
+
+ul {
+    margin-top: 0;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    gap: 100px;
+    list-style-type: none;
+    align-items: center;
+}
+
+ul h1 {
+    color: orange;
+    margin-right: 50px;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+
+}
+
+a:hover {
+    color: orange;
+}
+
+header {
+    display: flex;
+    gap: 200px;
+    text-align: center;
+}
+
+header img {
+    margin-top: 50px;
+    margin-left: 100px;
+}
+
+header h1 {
+    color: orange;
+    padding-top: 120px;
+    font-family: "Rubik", sans-serif;
+}
+
+
