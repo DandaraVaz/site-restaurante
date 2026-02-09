@@ -19,21 +19,22 @@ ul h1 {
     margin-right: 50px;
 }
 
-a {
+li a {
     color: white;
     text-decoration: none;
     font-size: 20px;
 
 }
 
-a:hover {
+li a:hover {
     color: orange;
 }
 
 header {
     display: flex;
-    gap: 200px;
+    gap: 100px;
     text-align: center;
+    align-items: center;
 }
 
 header img {
@@ -41,10 +42,25 @@ header img {
     margin-left: 100px;
 }
 
-header h1 {
-    color: orange;
-    padding-top: 120px;
+header div {
     font-family: "Rubik", sans-serif;
 }
 
 
+div button {
+    background-color: orange;
+    padding-right: 20px;
+    padding-left: 20px;
+    border-radius: 50px;
+    border: solid 3px black;
+}
+
+div button:hover {
+    background-color: #e66e0c;
+    transform: scale(1.05);
+}
+
+button h2 a {
+    text-decoration: none;
+    color: white;
+}
