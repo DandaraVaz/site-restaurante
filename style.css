@@ -6,7 +6,7 @@ body {
 
 ul {
     margin-top: 0;
-    padding: 20px;
+    padding: 8px;
     display: flex;
     justify-content: center;
     gap: 100px;
@@ -14,9 +14,13 @@ ul {
     align-items: center;
 }
 
-ul h1 {
+ul h2 {
     color: orange;
     margin-right: 50px;
+}
+
+.logo {
+    margin-top: 0px;
 }
 
 li a {
