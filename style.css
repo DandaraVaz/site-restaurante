@@ -1,5 +1,6 @@
 body {
     margin: 0px;
+    width: auto;
     background: black;
     color: white;
 }
@@ -8,21 +9,27 @@ nav {
     width: 100%;
     position: fixed;
     background-color: black;
+    border-bottom: 0.1rem solid white;
 }
 
-.navbar {
+.logo h3 a {
+    color: orange;
+    text-decoration: none;
+}
+
+.navlinks {
     display: none;
     flex-direction: column;
 }
 
-.navbar.active {
+.navlinks.active {
     display: block;
 }
 
 .hamburger {
     display: block;
     position: fixed;
-    right: 12px;
+    right: 40px;
     /* resetar os estilos padrões do botão */
     background: transparent;
     border: none;
@@ -40,7 +47,7 @@ nav {
 
 header {
     display: block;
-    padding: 5px;
+    padding: 50px;
     padding-top: 125px;
     text-align: center;
     align-items: center;
@@ -49,61 +56,8 @@ header {
 }
 
 header img {
-    height: 150px;
-    width: 280px;
-}
-
-
-@media (min-width: 768px) {
-
-nav {
+    height: auto;
     width: 100%;
-    position: fixed;
-    background-color: black;
-    border-bottom: 0.1rem solid white;
-}
-
-.hamburger {
-    display: none; // O menu fica escondido quando for para desktop
-}
-
-ul {
-    display: flex;
-    margin: 0px;
-    margin-left: 100px;
-}
-
-.logo h2 {
-    color: orange;
-    margin-right: 250px;
-}
-
-.navbar {
-    display: flex;
-    gap: 100px;
-    list-style-type: none;
-    align-items: center;
-}
-
-li a {
-    color: white;
-    text-decoration: none;
-    font-size: 20px;
-}
-
-li a:hover {
-    color: orange;
-}
-
-header {
-    display: flex;
-    padding: 110px;
-    padding-top: 225px;
-    gap: 100px;
-    text-align: center;
-    align-items: center;
-    justify-content: center;
-    border-bottom: 0.1rem solid white;
 }
 
 header div {
@@ -112,8 +66,7 @@ header div {
 
 div button {
     background-color: orange;
-    padding-right: 20px;
-    padding-left: 20px;
+    padding: 10px;
     border-radius: 50px;
     border: solid 3px black;
 }
@@ -128,4 +81,73 @@ button h2 a {
     color: white;
 }
 
+
+@media (min-width: 768px) {
+* {
+    margin: 0;
+    padding: 0;
+}
+
+nav {
+    width: 100%;
+    position: fixed;
+    background-color: black;
+    border-bottom: 0.1rem solid white;
+}
+
+.hamburger {
+    display: none; /* O menu fica escondido quando for para desktop */
+}
+
+.navbar {
+    margin: 10px 40px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.navlinks {
+    display: flex;
+    flex-direction: row;
+    gap: 100px;
+    list-style-type: none;
+    align-items: center;
+}
+
+li a {
+    color: white;
+    text-decoration: none;
+    font-size: 15px;
+}
+
+li a:hover {
+    color: orange;
+}
+
+/*Corpo da página*/
+header {
+    display: flex;
+    padding: 50px;
+    padding-top: 130px;
+    gap: 100px;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    border-bottom: 0.1rem solid white;
+}
+
+header img {
+    height: auto;
+    width: 50%;
+}
+
+.principalText h4 {
+    padding: 21px;
+}
+
+div button {
+    background-color: orange;
+    padding: 20px;
+    border-radius: 50px;
+    border: solid 3px black;
+}
 }
