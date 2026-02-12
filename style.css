@@ -4,30 +4,91 @@ body {
     color: white;
 }
 
-ul {
-    margin-top: 0;
-    padding: 8px;
-    display: flex;
+nav {
+    width: 100%;
+    position: fixed;
+    background-color: black;
+}
+
+.navbar {
+    display: none;
+    flex-direction: column;
+}
+
+.navbar.active {
+    display: block;
+}
+
+.hamburger {
+    display: block;
+    position: fixed;
+    right: 12px;
+    /* resetar os estilos padrões do botão */
+    background: transparent;
+    border: none;
+    padding: 0px;
+    margin: 0px;
+}
+
+.hamburger span {
+    display: block;
+    width: 25px;
+    height: 3px;
+    background: white;
+    margin: 5px 0;
+}
+
+header {
+    display: block;
+    padding: 5px;
+    padding-top: 125px;
+    text-align: center;
+    align-items: center;
     justify-content: center;
+    border-bottom: 0.1rem solid white;
+}
+
+header img {
+    height: 150px;
+    width: 280px;
+}
+
+
+@media (min-width: 768px) {
+
+nav {
+    width: 100%;
+    position: fixed;
+    background-color: black;
+    border-bottom: 0.1rem solid white;
+}
+
+.hamburger {
+    display: none; // O menu fica escondido quando for para desktop
+}
+
+ul {
+    display: flex;
+    margin: 0px;
+    margin-left: 100px;
+}
+
+.logo h2 {
+    color: orange;
+    margin-right: 250px;
+}
+
+.navbar {
+    display: flex;
     gap: 100px;
     list-style-type: none;
     align-items: center;
-}
-
-ul h2 {
-    color: orange;
-    margin-right: 50px;
-}
-
-.logo {
-    margin-top: 0px;
 }
 
 li a {
     color: white;
     text-decoration: none;
     font-size: 20px;
-
 }
 
 li a:hover {
@@ -36,20 +97,18 @@ li a:hover {
 
 header {
     display: flex;
+    padding: 110px;
+    padding-top: 225px;
     gap: 100px;
     text-align: center;
     align-items: center;
-}
-
-header img {
-    margin-top: 50px;
-    margin-left: 100px;
+    justify-content: center;
+    border-bottom: 0.1rem solid white;
 }
 
 header div {
     font-family: "Rubik", sans-serif;
 }
-
 
 div button {
     background-color: orange;
@@ -67,4 +126,6 @@ div button:hover {
 button h2 a {
     text-decoration: none;
     color: white;
+}
+
 }
