@@ -17,15 +17,6 @@ nav {
     text-decoration: none;
 }
 
-.navlinks {
-    display: none;
-    flex-direction: column;
-}
-
-.navlinks.active {
-    display: block;
-}
-
 .hamburger {
     display: block;
     position: fixed;
@@ -35,6 +26,7 @@ nav {
     border: none;
     padding: 0px;
     margin: 0px;
+    cursor: pointer;
 }
 
 .hamburger span {
@@ -43,6 +35,27 @@ nav {
     height: 3px;
     background: white;
     margin: 5px 0;
+}
+
+.menu {
+    display: none;
+    flex-direction: column;
+    list-style-type: none;
+}
+
+.menu.active {
+    display: block;
+}
+
+.menu li {
+    padding: 25px;
+    text-align: center;
+}
+
+.menu li a {
+    color: white;
+    text-decoration: none;
+    font-size: 15px;
 }
 
 header {
@@ -88,13 +101,6 @@ button h2 a {
     padding: 0;
 }
 
-nav {
-    width: 100%;
-    position: fixed;
-    background-color: black;
-    border-bottom: 0.1rem solid white;
-}
-
 .hamburger {
     display: none; /* O menu fica escondido quando for para desktop */
 }
@@ -105,11 +111,10 @@ nav {
     justify-content: space-between;
 }
 
-.navlinks {
+.menu {
     display: flex;
     flex-direction: row;
     gap: 100px;
-    list-style-type: none;
     align-items: center;
 }
 
@@ -145,9 +150,7 @@ header img {
 }
 
 div button {
-    background-color: orange;
     padding: 20px;
-    border-radius: 50px;
-    border: solid 3px black;
+    cursor: pointer;
 }
 }
