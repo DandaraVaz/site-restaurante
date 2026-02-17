@@ -294,23 +294,24 @@ header::before {
     .about-header {
         background-size: cover;
         background-position: center;
-        padding: 60px 20px;
+        padding: 105px 0px;
         text-align: center;
     }
 
     .about-header div h2 {
-        font-size: 2.5rem;
-        font-weight: bold;
-        margin-bottom: 20px;
-        letter-spacing: 2px;
+        font-size: 30px;
+        font-weight: 400;
+        text-transform: uppercase;
+        margin: 0px 0px 24px;
     }
 
     .about-header div p {
-        font-size: 1rem;
+        font-family: "Poppins", Arial, sans-serif;
+        font-size: 15px;
         max-width: 500px;
         margin: 0 auto;
-        color: #6495ed;
-        text-decoration: underline;
+        color: gray;
+        text-decoration: none;
     }
 
     .pizzas-grid {
@@ -351,9 +352,11 @@ header::before {
     }
 
     .pizza-content h3 {
-        font-size: 1.2rem;
-        margin: 0 0 10px 0;
-        color: white;
+        font-size: 20px;
+        line-height: 1.4;
+        font-wheight: 400;
+        color: #fff;
+        font-family: "Poppins", Arial, sans-serif;
     }
 
     .pizza-content p {
@@ -370,9 +373,8 @@ header::before {
     }
 
     .price {
-        font-size: 1.2rem;
-        color: #ffa500;
-        font-weight: bold;
+        font-size: 16px;
+        color: #fac564;
     }
 
     .btn-order {
@@ -380,7 +382,6 @@ header::before {
         border: 2px solid white;
         color: white;
         padding: 8px 16px;
-        border-radius: 20px;
         text-decoration: none;
         font-size: 0.9rem;
         cursor: pointer;
@@ -388,8 +389,8 @@ header::before {
     }
 
     .btn-order:hover {
-        background-color: #ffa500;
-        border-color: #ffa500;
+        background-color: #fac564;
+        border-color: #fac564;
         color: black;
     }
 
