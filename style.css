@@ -394,6 +394,212 @@ header::before {
         color: black;
     }
 
+    .sobre {
+        display: flex;
+        width: 100%;
+        max-width: 1200px;
+        margin: 0 auto;
+        gap: 0;
+        overflow: hidden;
+        border-radius: 4px;
+        background: transparent;
+    }
+
+    .sobre .image {
+        flex: 1;
+        min-height: 420px;
+        background-image: url('./images/about.jpg');
+        background-size: cover;
+        background-position: center;
+    }
+
+    .sobre .text {
+        flex: 1;
+        background-image: url('./images/bg_4.jpg');
+        background-size: cover;
+        background-position: center;
+        color: #fff;
+        padding: 72px 64px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .sobre .text .text-inner {
+        max-width: 520px;
+    }
+
+    .sobre .text h2 {
+        font-size: 36px;
+        margin: 0 0 16px;
+        font-family: "Josefin Sans", Arial, sans-serif;
+        font-weight: 600;
+    }
+
+    .sobre .text h2 span {
+        color: #fac564;
+    }
+
+    .sobre .text p {
+        color: rgba(255,255,255,0.85);
+        line-height: 1.8;
+        font-size: 16px;
+        margin: 0;
+    }
+
+    @media (max-width: 768px) {
+        .sobre {
+            flex-direction: column;
+        }
+        .sobre .image {
+            min-height: 280px;
+        }
+        .sobre .text {
+            padding: 40px 24px;
+        }
+        .sobre .text h2 {
+            font-size: 28px;
+        }
+    }
+
+    /* SERVICES SECTION */
+    #services {
+        color: #222;
+        padding: 80px 0;
+        background-image: url('./images/food.png');
+    }
+
+    #services .services-inner {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 0 20px;
+        text-align: center;
+    }
+
+    #services h2 {
+        font-size: 28px;
+        margin: 0 0 8px;
+        font-family: "Josefin Sans", Arial, sans-serif;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        color: #111;
+    }
+
+    #services .lead {
+        color: rgba(0,0,0,0.55);
+        max-width: 760px;
+        margin: 0 auto 36px;
+        font-size: 15px;
+    }
+
+    .services-grid {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 30px;
+        align-items: start;
+    }
+
+    .service-card {
+        padding: 32px 24px;
+        border: 1px dashed rgba(0,0,0,0.12);
+        background: rgba(255,255,255,0.02);
+        border-radius: 4px;
+        text-align: center;
+        min-height: 220px;
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+        justify-content: flex-start;
+    }
+
+    .icon-box {
+        width: 72px;
+        height: 72px;
+        margin: 0 auto 6px;
+        border-radius: 6px;
+        border: 1px solid rgba(0,0,0,0.12);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: rgba(255,255,255,0.06);
+    }
+
+    .icon-emoji { font-size: 28px; }
+
+    .service-card h3 {
+        margin: 0;
+        font-size: 13px;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        color: #111;
+    }
+
+    .service-card p {
+        color: rgba(0,0,0,0.6);
+        font-size: 14px;
+        line-height: 1.6;
+        margin-top: 6px;
+    }
+
+    @media (max-width: 1024px) {
+        .services-grid { grid-template-columns: repeat(2, 1fr); }
+    }
+
+    @media (max-width: 768px) {
+        #services { padding: 48px 0; }
+        .services-grid { grid-template-columns: 1fr; gap: 18px; }
+        .service-card { padding: 22px; min-height: auto; }
+    }
+
+    .cont {
+        display: flex;
+    }
+
+    .cont h3 {
+        line-height: 1.4;
+        font-size: 16px;
+        color: #fff;
+        font-weight: 400;
+        font-family: "Josefin Sans", Arial, sans-serif;
+    }
+
+    .cont p {
+        display: block;
+        font-size: 15px;
+        line-height: 1.8;
+        font-weight: 300;
+        color: gray;
+    }
+
+    .fone {
+        display: flex;
+        background: #000;
+        padding: 30px;
+        width: 100%;
+        justify-content: center;
+    }
+
+    .icon span img {
+        padding-right: 16px;
+        width: 20px;
+    }
+
+    .social-icon {
+        display: flex;
+        background: #fac564;
+        width: 35%;
+        padding: 24px 24px 24px 48px;
+        list-style-type: none;
+        align-items: center;
+    }
+
+    .social-icon li a img {
+        margin-right: 24px;
+        width: 20px;
+    }
+    
+
+
     @media (max-width: 1024px) {
         .pizzas-grid {
             grid-template-columns: repeat(2, 1fr);
