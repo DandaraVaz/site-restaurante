@@ -1,58 +1,273 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Restaurante</title>
-    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@507&family=Fascinate+Inline&family=Rubik&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Josefin+Sans" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cairo:wght@507&family=Fascinate+Inline&family=Rubik&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Nothing+You+Could+Do" rel="stylesheet">
 
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
     <nav>
-        <ul>
-            <!-- btn quer dizer que é um botão -->
-            <button id="menu-btn" class="hamburger">
-                <span></span> 
-                <span></span> 
-                <span></span> 
-            </button>
-            <div class="navbar">
-                <div class="logo">
-                    <h3><a href="index.html">🍕Pizzaria <br>QueroMais</a></h3>
-                </div>
-                <div class="navlinks">
-                    <li>
-                        <a href="index.html">Início</a>
-                    </li>
-                    <li>
-                        <a href="">Sobre</a>
-                    </li>
-                    <li>
-                        <a href="">Cardápio</a>
-                    </li>
-                    <li>
-                        <a href="">Ambiente</a>
-                    </li>
-                    <li>
-                        <a href="">Contato</a>
-                    </li>
-                </div>
-            </div>           
-        </ul>
-    </nav>
-    <header>
-        <img src="./images/pizza3.png" alt="">
-        <div>
-            <div class="principalText">
-                <h2>A melhor pizza da cidade, feita no forno à lenha 🍕</h2> 
-                <h4>Ingredientes selecionados e sabor inesquecível.</h3>
+        <!-- btn quer dizer que é um botão -->
+        <button id="menu-btn" class="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+        <div class="navbar">
+            <div class="logo">
+                <a href="index.html" style="text-decoration: none;">
+                    <div>
+                        🍕Pizzaria
+                    </div>
+                    <div>QueroMais</div>
+                </a>
             </div>
-            <button>
-                <h2><a href="">Fazer Pedido</a></h2>
-            </button>
+            <div id="menu" class="menu">
+                <li>
+                    <a href="index.html">Home</a>
+                </li>
+                <li>
+                    <a href="#cardapio">Menu</a>
+                </li>
+                <li>
+                    <a href="#services">Services</a>
+                </li>
+                <li>
+                    <a href="#about">About</a>
+                </li>
+                <li>
+                    <a href="#Contact">Contact</a>
+                </li>
+            </div>
         </div>
-        
+    </nav>
+
+    <header>
+        <div class="header-inner">
+            <img class="header-image" src="./images/pizza3.png" alt="Pizza">
+            <div class="header-content">
+                <div class="principalText">
+                    <span class="subheading">Delicious</span>
+                    <h1>ITALIAN CUIZINE</h1>
+                    <p>A small river named Duden flows by their place and supplies it with the necessary regelialia.</p>
+                </div>
+                <div>
+                    <a class="header-cta" href="">Oder now</a>
+                    <a class="btn-white" href="#cardapio">View Menu</a>
+                </div>
+
+            </div>
+        </div>
     </header>
+
+
+    <section id="cardapio">
+        <div class="about-header" style="background-image: url('./images/bg_4.jpg');">
+            <div>
+                <h2>Our Menu</h2>
+                <p>
+                    Far far away, behind the word mountains, far from the countries Vokalia and Consonantia,
+                    there live the blind texts.
+                </p>
+            </div>
+
+            <div class="pizzas-grid">
+                <div class="pizza-card">
+                    <div class="pizza-image" style="background-image: url(./images/italian-pizza.jpeg);"></div>
+                    <div class="pizza-content">
+                        <h3>Italian Pizza</h3>
+                        <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia</p>
+                        <div class="pizza-footer">
+                            <span class="price">$2.90</span>
+                            <a href="#" class="btn-order">Order</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="pizza-card">
+                    <div class="pizza-image" style="background-image: url(./images/pizza-1.jpg);"></div>
+                    <div class="pizza-content">
+                        <h3>Greek Pizza</h3>
+                        <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia</p>
+                        <div class="pizza-footer">
+                            <span class="price">$2.90</span>
+                            <a href="#" class="btn-order">Order</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="pizza-card">
+                    <div class="pizza-image" style="background-image: url(./images/pizza-6.jpg);"></div>
+                    <div class="pizza-content">
+                        <h3>Caucasian Pizza</h3>
+                        <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia</p>
+                        <div class="pizza-footer">
+                            <span class="price">$2.90</span>
+                            <a href="#" class="btn-order">Order</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="pizza-card">
+                    <div class="pizza-image" style="background-image: url(./images/american-pizza.avif);"></div>
+                    <div class="pizza-content">
+                        <h3>American Pizza</h3>
+                        <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia</p>
+                        <div class="pizza-footer">
+                            <span class="price">$2.90</span>
+                            <a href="#" class="btn-order">Order</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="pizza-card">
+                    <div class="pizza-image" style="background-image: url(./images/pizza-2.jpg);"></div>
+                    <div class="pizza-content">
+                        <h3>Tomatoe Pie</h3>
+                        <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia</p>
+                        <div class="pizza-footer">
+                            <span class="price">$2.90</span>
+                            <a href="#" class="btn-order">Order</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="pizza-card">
+                    <div class="pizza-image" style="background-image: url(./images/margherita-pizza.jpg);"></div>
+                    <div class="pizza-content">
+                        <h3>Margherita</h3>
+                        <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia</p>
+                        <div class="pizza-footer">
+                            <span class="price">$2.90</span>
+                            <a href="#" class="btn-order">Order</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="services">
+        <div class="services-inner">
+            <h2>Our Services</h2>
+            <p class="lead">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia,
+                there live the blind texts.</p>
+
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="icon-box"><span class="icon-emoji">🍎</span></div>
+                    <h3>HEALTHY FOODS</h3>
+                    <p>Even the all-powerful Pointing has no control about the blind texts it is an almost
+                        unorthographic.</p>
+                </div>
+
+                <div class="service-card">
+                    <div class="icon-box"><span class="icon-emoji">🚲</span></div>
+                    <h3>FASTEST DELIVERY</h3>
+                    <p>Even the all-powerful Pointing has no control about the blind texts it is an almost
+                        unorthographic.</p>
+                </div>
+
+                <div class="service-card">
+                    <div class="icon-box"><span class="icon-emoji">🍕</span></div>
+                    <h3>ORIGINAL RECIPES</h3>
+                    <p>Even the all-powerful Pointing has no control about the blind texts it is an almost
+                        unorthographic.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="about">
+        <div class="sobre">
+            <div class="image"></div>
+            <div class="text">
+                <div class="text-inner">
+                    <h2>Welcome to <span>Pizza</span> A Restaurant</h2>
+                    <p>
+                        On her way she met a copy. The copy warned the Little Blind Text, that where it came from it
+                        would have been rewritten
+                        a thousand times and everything that was left from its origin would be the word "and" and the
+                        Little Blind Text should
+                        turn around and return to its own, safe country. But nothing the copy said could convince her
+                        and so it didn’t take
+                        long until a few insidious Copy Writers ambushed her, made her drunk with Longe and Parole and
+                        dragged her into their
+                        agency, where they abused her for their.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="Contact">
+        <div class="cont">
+            <div class="fone">
+                <div class="icon">
+                    <span>
+                        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAACXBIWXMAAAsTAAALEwEAmpwYAAABiklEQVR4nO2VMUtDQQzHn4oK1sFBF7+G2NVB0E/QrSJ9STsIOuooCrr4BaSuTjqrqENBk6JSJ8VF1EkHRRGhQ1Lk5Kgd2r4+2r6eIPQPtx35JXdJ/p7XVVdNqkj+uDKuCOGlMHwI45cQnJYYZ5uN0ZJMbmFYCNeFoKiMJugI42ZHoZqHuBI8NQJWw32/M1CGJSGUZqC/5yES0Owl+pRxpwVguWKCq/ahh4uDSrDfIvDbJmrOUmPtQY+TMWE8CWicV2UsNICynuNE+5XeJgaE8Kg+MJLJZUbtHc2np5TwppwMvChjxpjV3mh/SkHPC7s2oaq7hUy/7XRTyAx5UaUM2YBKt4zxeiIHDxuZAOi251LK6cnaORXGA/v0zqDmOBlThsdqKLyZ3PyI51LCuFbXTATXzl1GGiz8EvvTzsBKsNxwExHe2ZFxAhaGi9A1mIe4GzDhewj42TaeIzB8hnjqnBOoVZARVBa+021VIn8m0NqiuEyzEoaNGkPIen8lYUgp4b312or1dfUv9QNqIm8HmDRuMwAAAABJRU5ErkJggg=="
+                            alt="phone-disconnected">
+                    </span>
+                </div>
+                <div class="text">
+                    <h3>000 (123) 456 7890</h3>
+                    <p>A small river named Duden flows</p>
+                </div>
+
+                <div class="icon">
+                    <span><img
+                            src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAACXBIWXMAAAsTAAALEwEAmpwYAAAEoUlEQVR4nM2aWYgcVRRAyyTqhysqLqgYFzQoaiSoURAX/FAQXGBUNIvT93ZPiLj9KH5Ii/rhhx+ZiILoj+DGqNGJC4pCp6furZmByYc4RFA0Ji7oh1ETZrrv6yRPbk3PTA/jVL3urledCw+KWu6r8+7y7ntVQZCx1Kp4viF4whBsE4YxQ/CLtubxNhPh43pPcKRKg/EWYRg1jNalCWPUoMLNwZEidhTOEMbPXAEWARF+annT6T2FkFG4whDs7hRirqn7hbimNxCEq4XhQNcQ8662X8L+K3OFsJXSaYbxx6wg5i2DP+fqZt3EhEPbngtEI4SbPEJYbZoBvYO0k2I7z2TAXiFqYf8FboELdSEcNCOla+2X647TpsfCsFWvueiojQ6s9Aais3J6wMKvSdlHs53ekw5TfMwfiJYYaZZwSKHN1J1iGfjAG4gQjif7Ng4662J8OWVQxryBGMa9iaMYwTXOukJcm+Jee72BCOEfSZ3byubjXXXpvSkW+d0biCH4PjOQsQdPTE4auMsbiBBSXq4lBDu8gRjG11PcYWt2wY6v9mweaU6Eq53SL6GkzCOb/YFw8WqnCTEBxnVClKh0uTcQO9S3XAj+SX0JQoldJ8S1mgDiDEWF6/RcuiVQ4+NPa4OjAp+iM26qVbptBG8GvkW4eL9vkAbjHd5BLBVOEIIpXxDCsM9+/sixQR5iGN7wBkL4UpCXxJnHD8Th+ghenBvIDAxw9iDwSa4QMUgED2Qe5BHcljuInew7xjD+lhkIwXfWlpcFvRDD+HCGbnVf0CuxE6WjM9moI/y2Z9aYFeFCoVuQOuGdQa/FDvUtV//uAmTCe13lKnUu3NVZXOBhExVvDPIUa8vLJMTLJERoVrFfG4ZJW9l4sl4Xgi86yFTvzm2KE+4Sgq/iTbwQoT7Sf2lmlrLj60+VCDcYgveF8e+kVWGdCpe4lOgtzx2YGsNz9FlD+NoSFvvLEA4JF9bbCE5pG8Bw8XpD+LbL9qYwNGYXQULworM1Qng67ivENUJwyKGfur6TvlsqQI1KFxqGj9v3ddihbjCzxQM/pT8Dkzqh6jP6LbH9+ILhWgQX/S+ElgdLuY8TTIQbZvQUb42DeGnoQ7pybLrUpo77I/y3ERZvXwChriEE050qnfVnO77xzLTdFiHYovdMRQNnuyybTbInGOHCVS0xAcPdKGxpH8ZJYqJ0kmHYs+g64Q/6iaEJuz2LPoUhnLcI4/6sayZDeIMwHmzpsDHrUpqFMuuP8eBceeMWoM4jtG+6+tC5M1kMn2s5/2ycUEYHVnbrUmZBgz3zrkXwZHaK43ipauliK+UVulhSN9LjeDuJYSTLvkwzjbfUS/hRph0QlhfPT/BMpn0wDOsALegkHj3GF2JfzswysEXnJs35OlkmpeW29DLWhOD5RRCtUufSKkPwTjvlRl5N4kGGt6a5cF7Q3t8N8Kgh2JnVSHbuprBTP452/VeEKpAQ79WtfkP4jU9rieqO+4BXNJXbaumsrl4+EaxSXqHVbj2EewzjUxoLhvE9zVbxIotgt6bh1pJHj/Vc/DdRXLJjtfnMoOqoR3i36kz0+wT5DxFOFliR+8PQAAAAAElFTkSuQmCC"
+                            alt="place-marker--v1"></span>
+                </div>
+                <div class="text">
+                    <h3>198 West 21th Street</h3>
+                    <p>Suite 721 New York NY 10016</p>
+                </div>
+
+                <div class="icon">
+                    <span><img
+                            src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAACXBIWXMAAAsTAAALEwEAmpwYAAACOklEQVR4nO1WzW4TMRDeO4gTB6BFiIKAd4FyphQJujNJ1SYcUHkRbgTxAFVoORUQpyrsTBRegL+ngJY0Ow7VovF6F4RC7E32mE+yZMnfeD6PPeOJogUWqICT3qPLJoG2EL4zBJ+F8KcOO2d4axhbwwEuR3Vj2N9cMoQdYRgbxmzaEIJTQ9g94fhKLc5TatwVxqN8cxTDuCvcuJdSfDN7/+CMDp0L45pdyzmZ2qQJrM7l3BA+tifS0xF2Rz286rMZJRsrhmGvjEYC7dlPTnAqjL8MwZOJAl3YJ6/BjtrqHpUjMexvLhVh/59zn4BChLu6H1mveTFYgGF4WYR9Om+6AMfZd3t1glNNbOhQfHceImBEzWu6l2aQRtYrwCTQdhvverkBAiyPsJtzG9teAZIXFE2jtboECOG6ewsHXgGG4JuSR324XpcArROO+8UrQBiOlZwdbp8NFTBp/M3TvfKownGAADyqXcBg/VyRjl4BhuGrktMPeCOqCSk3b7lU/FTrIwxFtUfI2ApNw1CUaUiw5SUPB7isRcMWomRjZV7nmk2VCpHCMLzIowB70ZwwBK9d+J8HGw0pvlR+Rgw7Mzvn+Kn7lr9nHx9eqGScJrBafscziFDnxXc85vh2VXuLvP9zDQnjvn4sUcCd/wm7tW1F82DMeEcLSNmSEXalD/c1t7VY6dC5TTWCV0JgirDPfPJ/kR02zwvhs6CmVDmEnUoNSLXuGLaE8Y1WNa3t9u/QOeGBrgWn2gILRDl+AwXTm4qf88nzAAAAAElFTkSuQmCC"
+                            alt="clock--v1"></span>
+                </div>
+                <div class="text">
+                    <h3>Open Monday-Friday</h3>
+                    <p>8:00am - 9:00pm</p>
+                </div>
+            </div>
+            <div class="social-icon">
+                <li>
+                    <a href=""><img
+                            src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAACXBIWXMAAAsTAAALEwEAmpwYAAABRUlEQVR4nO2UO0sDQRSF1y1ELQTBIgSb2AiCgv4CkyLiHxDSqljYWNprIViIjZZapLNKb6OdiWAVSIqAqGAhKD4aHySfDNxiWOfuziYpc6pl5txz5s7cs0EwgC+AELjkP76A+YTaFeAX6AClOGIOeHeY1IERpWYB+BTejk8na7hx4OBmgQfZP00UtwrPHQZtIG9xxoCa7F0Bw2kMJoEnh8kjMCHvVZG1hlnzFo88XMdhUgaO5PsZmE4tbpkco+MbWOpa3LrnpmKw1ZO4ZbIop43iAhjql8mu0sV2P8RHgapiYFI+14t4aI1jC/hwmNymykDE4FBEXoAZYF3pZL8b8Q0p/gEKHin3H1lgWf6OBpueKb8Dxn3EZ4E3KdpTOEUl5WdJ4hngXsjmKsIY7glurMaN47WQbkyKEw6jpfwVmIrtZIDAwh/zetAlHU8P6QAAAABJRU5ErkJggg=="
+                            alt="twitterx--v2"></a>
+                </li>
+                <li>
+                    <a href=""><img
+                            src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAACXBIWXMAAAsTAAALEwEAmpwYAAABlElEQVR4nN2UzUtCQRTFrdCN9n+EbYMEoYKiZWgfQqt2SWbWvm2YtGzbso9t/0lQkZnVrnVQRrXqF7fuo8vrzfh06YEBnXPnnOG8OzeRGGgAKaAEnAEt4E2X/D5VLtWv+CLwSHc8AMVehIeBAyNwCdSALJDWNQ5sA1emriFn4xgE4p9A2XdIL7OhtT8mcWIJxKcdNaPAJDAPTOjejDEp+D5okHnZUbMEdEwsz4ar6N49kIw6XDKZ/4sFyACvRvwJuDD8CHCt3HKUgbSioOa4fc6I7zlqdpQ/iSLvlMw6Dq8YgylHjXSXoBVFBtlmHIdXjUHO0wCCjs8gHdo/xI2mw+DFF9FYDwbnodqsLyKZLYLN0H4eWAeOjPC+7uVDtVvKH/vaVFptqNdvwO+rvvG1aUoHl6DSh0FVuXbkQ9Oioha9A7NxDYA54AP4AhYixU1xw5hUg7iiDITTSSvigrpX3GQZmKC5ymje5Q9r+mpv9b/cvB5rXBujgg6ubmh3jcVjkpSOkNmit5XHKKsprahc9AcdGHwDAXyDAv0CS8MAAAAASUVORK5CYII="
+                            alt="facebook-new"></a>
+                </li>
+                <li>
+                    <a href=""><img
+                            src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAACXBIWXMAAAsTAAALEwEAmpwYAAAA5ElEQVR4nO2TQQ6CMBBFew3gSOB1BNcSbyUkGg+ksHH1TMmQoLbTWlzyVqSdmd/5PxizkQKwA3pgJIyt6YAqdviJdNqYl1uewB7IIx6UA7X0oG4itljqqHXN1HMDrkAjvWeteJCiXMlkXHouwy+yieWhCUz8kEkb6lcFXJlonqcI9L5MXJ6nCAxylDlqs0/P1wjkjtpC7u5rBDo5ahy1h39YVC1CbiTgQobPIZfJAnLW4ucY6o/90SprhdwP8l16MlF/NK/nIVyZuIq+PDfhwd5MfA2a5yHeMgltMnsewpnJhonlBVpHISIiUnwrAAAAAElFTkSuQmCC"
+                            alt="instagram-new--v1"></a>
+                </li>
+            </div>
+        </div>
+
+        <div>
+
+        </div>
+    </section>
+
+    <script src="script.js"></script>
 </body>
+
 </html>
