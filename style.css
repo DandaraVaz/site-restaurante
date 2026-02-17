@@ -3,16 +3,32 @@ body {
     width: auto;
     background: black;
     color: white;
+    font-family: "Poppins", Arial, sans-serif;
+    overflow-y: scroll;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+
+body::-webkit-scrollbar {
+    display: none;
+}
+
+html, body {
+    height: 100%;
 }
 
 nav {
     width: 100%;
     position: fixed;
-    background-color: black;
-    border-bottom: 0.1rem solid white;
+    background: #121618;
+    padding: 16px;
 }
 
-.logo h3 a {
+:root {
+    --nav-h: 64px;
+}
+
+.logo h2 a {
     color: orange;
     text-decoration: none;
 }
@@ -53,104 +69,357 @@ nav {
 }
 
 .menu li a {
-    color: white;
+    color: rgba(255, 255, 255, 0.7);
     text-decoration: none;
-    font-size: 15px;
+    font-size: 14px;
 }
 
 header {
     display: block;
     padding: 50px;
-    padding-top: 125px;
+    padding-top: calc(var(--nav-h) + 20px);
     text-align: center;
     align-items: center;
     justify-content: center;
-    border-bottom: 0.1rem solid white;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
 }
 
-header img {
-    height: auto;
+header::before {
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: url('./images/bg_1.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    opacity: 0.5;
+    z-index: -1;
+}
+
+/* Scoped header layout elements */
+.header-inner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+.header-image {
     width: 100%;
+    height: auto;
+    max-width: 420px;
 }
 
-header div {
+.header-content {
     font-family: "Rubik", sans-serif;
+    width: 100%;
+    text-align: center;
+    padding: 0 16px;
 }
 
-div button {
-    background-color: orange;
-    padding: 10px;
-    border-radius: 50px;
-    border: solid 3px black;
-}
-
-div button:hover {
-    background-color: #e66e0c;
-    transform: scale(1.05);
-}
-
-button h2 a {
+.header-cta {
+    display: inline-block;
+    margin-top: 12px;
     text-decoration: none;
-    color: white;
+    padding: 16px 28px;
+    color: #000;
+    border: 1px solid #fac564;
+    background-color: #fac564;
+}
+
+.header-cta:hover {
+    background-color: transparent;
+    color: #fac564;
+}
+
+.btn-white {
+    display: inline-block;
+    margin-top: 12px;
+    text-decoration: none;
+    padding: 16px 28px;
+    color: rgba(255, 255, 255, 0.8);
+    border: 1px solid #fff;
+    background-color: transparent;
+}
+
+.btn-white:hover {
+    background-color: #fac564;
+    color: #000;
+    border-color: #fac564;
 }
 
 
 @media (min-width: 768px) {
-* {
-    margin: 0;
-    padding: 0;
-}
+    * {
+        margin: 0;
+        padding: 0;
+    }
 
-.hamburger {
-    display: none; /* O menu fica escondido quando for para desktop */
-}
+    .hamburger {
+        display: none; /* O menu fica escondido quando for para desktop */
+    }
 
-.navbar {
-    margin: 10px 40px;
-    display: flex;
-    justify-content: space-between;
-}
+    .navbar {
+        display: flex;
+        justify-content: space-between;
+        padding: 0px 15px;
+        margin: 0px 109px;
+    }
 
-.menu {
-    display: flex;
-    flex-direction: row;
-    gap: 100px;
-    align-items: center;
-}
+    .logo a {
+        color: white;
+        text-decoration: none;
+    }
 
-li a {
-    color: white;
-    text-decoration: none;
-    font-size: 15px;
-}
+    .logo a div:first-child {
+        font-size: 24px;
+        font-family: "Josefin Sans", Arial, sans-serif;
+    }
 
-li a:hover {
-    color: orange;
-}
+    .logo a div:last-child {
+        font-size: 18px;
+        color: rgb(250, 197, 100)!important; 
+        font-family: "Josefin Sans", Arial, sans-serif;
+    }
 
-/*Corpo da página*/
-header {
-    display: flex;
-    padding: 50px;
-    padding-top: 130px;
-    gap: 100px;
-    text-align: center;
-    align-items: center;
-    justify-content: center;
-    border-bottom: 0.1rem solid white;
-}
+    .menu {
+        display: flex;
+        flex-direction: row;
+        gap: 100px;
+        align-items: center;
+    }
 
-header img {
-    height: auto;
-    width: 50%;
-}
+    .menu li {
 
-.principalText h4 {
-    padding: 21px;
-}
+        padding: 0px;
+    }
 
-div button {
-    padding: 20px;
-    cursor: pointer;
-}
+    li a {
+        color: white;
+        text-decoration: none;
+    }
+
+    li a:hover {
+        color: orange;
+    }
+
+    /*Corpo da página*/
+
+    header {
+        display: flex;
+        padding: calc(var(--nav-h) + 40px) 0 50px 0;
+        gap: 80px;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+        height: calc(100vh - var(--nav-h));
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        box-sizing: border-box;
+    }
+
+    .header-inner {
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        gap: 60px;
+        width: 100%;
+        max-width: 1200px;
+        padding: 0 20px;
+    }
+
+    .header-image {
+        width: 30%;
+        max-width: none;
+    }
+
+    .header-content {
+        width: 50%;
+        text-align: left;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        align-items: flex-start;
+    }
+
+    .principalText {
+        margin: 0;
+    }
+
+    .subheading {
+        font-family: "Nothing You Could Do", cursive;
+        font-size: 30px;
+        color: #fac564;
+    }
+
+    .principalText h1 {
+        padding: 0;
+        font-family: "Josefin Sans", Arial, sans-serif;
+        margin: 24px 0px 24px;
+    }
+
+    .principalText p {
+        font-size: 18px;
+        line-height: 1.5;
+        font-weight: 300;
+        color: white;
+    }
+
+    .header-cta {
+        padding: 16px 28px;
+        
+    }
+
+
+    /* SECTION MENU*/
+
+    .mb-4 {
+        font-size: 30px;
+        font-weight: 400;
+    }
+
+    /* SECTION SOBRE */
+    #sobre {
+        background-color: #0a0a0a;
+        padding: 0;
+    }
+
+    .about-header {
+        background-size: cover;
+        background-position: center;
+        padding: 60px 20px;
+        text-align: center;
+    }
+
+    .about-header div h2 {
+        font-size: 2.5rem;
+        font-weight: bold;
+        margin-bottom: 20px;
+        letter-spacing: 2px;
+    }
+
+    .about-header div p {
+        font-size: 1rem;
+        max-width: 500px;
+        margin: 0 auto;
+        color: #6495ed;
+        text-decoration: underline;
+    }
+
+    .pizzas-grid {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 30px;
+        padding: 60px 20px;
+        max-width: 1400px;
+        margin: 0 auto;
+    }
+
+    .pizza-card {
+        display: flex;
+        background-color: #1a1a1a;
+        border-radius: 8px;
+        overflow: hidden;
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .pizza-card:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 8px 16px rgba(255, 165, 0, 0.2);
+    }
+
+    .pizza-image {
+        width: 40%;
+        background-size: cover;
+        background-position: center;
+        min-height: 200px;
+    }
+
+    .pizza-content {
+        width: 60%;
+        padding: 20px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    .pizza-content h3 {
+        font-size: 1.2rem;
+        margin: 0 0 10px 0;
+        color: white;
+    }
+
+    .pizza-content p {
+        font-size: 0.9rem;
+        color: #999;
+        margin: 0 0 15px 0;
+        flex-grow: 1;
+    }
+
+    .pizza-footer {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .price {
+        font-size: 1.2rem;
+        color: #ffa500;
+        font-weight: bold;
+    }
+
+    .btn-order {
+        background-color: transparent;
+        border: 2px solid white;
+        color: white;
+        padding: 8px 16px;
+        border-radius: 20px;
+        text-decoration: none;
+        font-size: 0.9rem;
+        cursor: pointer;
+        transition: all 0.3s ease;
+    }
+
+    .btn-order:hover {
+        background-color: #ffa500;
+        border-color: #ffa500;
+        color: black;
+    }
+
+    @media (max-width: 1024px) {
+        .pizzas-grid {
+            grid-template-columns: repeat(2, 1fr);
+        }
+    }
+
+    @media (max-width: 768px) {
+        .pizzas-grid {
+            grid-template-columns: 1fr;
+            padding: 40px 15px;
+        }
+
+        .about-header h2 {
+            font-size: 1.8rem;
+        }
+
+        .pizza-card {
+            flex-direction: column;
+        }
+
+        .pizza-image {
+            width: 100%;
+            min-height: 250px;
+        }
+
+        .pizza-content {
+            width: 100%;
+        }
+    }
 }
