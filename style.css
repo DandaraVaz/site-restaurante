@@ -154,6 +154,111 @@ header::before {
     border-color: #fac564;
 }
 
+/* Mobile-first: estilo do menu / seção de pizzas fora das media queries */
+.about-header {
+    background-size: cover;
+    background-position: center;
+    padding: 48px 0 10px;
+    text-align: center;
+}
+
+.about-header div h2 {
+    font-size: 28px;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin: 0 0 10px;
+    letter-spacing: 1px;
+    color: #fff;
+}
+
+.about-header div p {
+    font-family: "Poppins", Arial, sans-serif;
+    font-size: 15px;
+    max-width: 720px;
+    margin: 0 auto 18px;
+    color: rgba(255,255,255,0.85);
+    line-height: 1.6;
+}
+
+.pizzas-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+    padding: 18px 12px 60px;
+    max-width: 920px;
+    margin: 0 auto;
+}
+
+.pizza-card {
+    display: flex;
+    flex-direction: row;
+    background-color: #1a1a1a;
+    border-radius: 8px;
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.pizza-image {
+    width: 48%;
+    background-size: cover;
+    background-position: center;
+    min-height: 180px;
+    flex-shrink: 0;
+}
+
+.pizza-content {
+    width: 52%;
+    padding: 18px 16px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background: linear-gradient(180deg, rgba(0,0,0,0.0), rgba(0,0,0,0.0));
+}
+
+.pizza-content h3 {
+    font-size: 18px;
+    line-height: 1.2;
+    font-weight: 600;
+    color: #fff;
+    margin: 0 0 8px;
+}
+
+.pizza-content p {
+    font-size: 14px;
+    color: rgba(255,255,255,0.85);
+    margin: 0 0 12px;
+    line-height: 1.6;
+}
+
+.pizza-footer {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 12px;
+}
+
+.price {
+    font-size: 16px;
+    color: #fac564;
+    font-weight: 600;
+}
+
+.btn-order {
+    background-color: transparent;
+    border: 2px solid #fff;
+    color: #fff;
+    padding: 8px 12px;
+    text-decoration: none;
+    font-size: 0.9rem;
+    border-radius: 4px;
+}
+
+.btn-order:hover {
+    background-color: #fac564;
+    border-color: #fac564;
+    color: #000;
+}
+
 
 @media (min-width: 768px) {
     * {
