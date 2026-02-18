@@ -28,9 +28,20 @@ nav {
     --nav-h: 64px;
 }
 
-.logo h2 a {
-    color: orange;
+.logo a {
+    color: white;
     text-decoration: none;
+}
+
+.logo a div:first-child {
+    font-size: 24px;
+    font-family: "Josefin Sans", Arial, sans-serif;
+}
+
+.logo a div:last-child {
+    font-size: 18px;
+    color: rgb(250, 197, 100)!important; 
+    font-family: "Josefin Sans", Arial, sans-serif;
 }
 
 .hamburger {
@@ -77,7 +88,7 @@ nav {
 header {
     display: block;
     padding: 50px;
-    padding-top: calc(var(--nav-h) + 20px);
+    padding-top: calc(var(--nav-h) + 60px);
     text-align: center;
     align-items: center;
     justify-content: center;
@@ -202,6 +213,65 @@ header::before {
     line-height: 1.8;
     font-size: 15px;
     margin: 0;
+}
+
+/* Mobile-first: Contact section */
+.cont {
+    max-width: 920px;
+    margin: 0 auto;
+}
+
+.fone {
+    background: #0a0a0a;
+    padding: 18px;
+    display: grid;
+    grid-template-columns: 48px 1fr;
+    gap: 12px 14px;
+    align-items: center;
+    color: #fff;
+    border-radius: 6px;
+}
+
+.fone .icon span {
+    display: inline-flex;
+    width: 44px;
+    height: 44px;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+}
+
+.fone .icon span img {
+    width: 18px;
+    height: auto;
+}
+
+.fone .text h3 {
+    margin: 0;
+    font-size: 18px;
+    color: #fff;
+}
+
+.fone .text p {
+    margin: 6px 0 0;
+    color: rgba(255,255,255,0.8);
+    font-size: 14px;
+}
+
+.social-icon {
+    display: flex;
+    justify-content: center;
+    gap: 18px;
+    padding: 12px 0;
+    background: #fac564;
+    list-style: none;
+}
+
+.social-icon li { display: inline-block; }
+
+.social-icon li a img {
+    width: 20px;
+    opacity: 0.95;
 }
 
 /* Mobile-first: estilo do menu / seção de pizzas fora das media queries */
