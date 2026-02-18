@@ -697,8 +697,8 @@ header::before {
 
     .sobre {
         display: flex;
+        flex-direction: row;
         width: 100%;
-        max-width: 1200px;
         margin: 0 auto;
         gap: 0;
         overflow: hidden;
@@ -854,6 +854,7 @@ header::before {
 
     .cont {
         display: flex;
+        max-width: 100%;
     }
 
     .cont h3 {
