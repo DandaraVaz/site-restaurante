@@ -28,9 +28,20 @@ nav {
     --nav-h: 64px;
 }
 
-.logo h2 a {
-    color: orange;
+.logo a {
+    color: white;
     text-decoration: none;
+}
+
+.logo a div:first-child {
+    font-size: 24px;
+    font-family: "Josefin Sans", Arial, sans-serif;
+}
+
+.logo a div:last-child {
+    font-size: 18px;
+    color: rgb(250, 197, 100)!important; 
+    font-family: "Josefin Sans", Arial, sans-serif;
 }
 
 .hamburger {
@@ -77,7 +88,7 @@ nav {
 header {
     display: block;
     padding: 50px;
-    padding-top: calc(var(--nav-h) + 20px);
+    padding-top: calc(var(--nav-h) + 60px);
     text-align: center;
     align-items: center;
     justify-content: center;
@@ -153,6 +164,296 @@ header::before {
     color: #000;
     border-color: #fac564;
 }
+
+/* Mobile-first: About section */
+.sobre {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin: 0 auto;
+    gap: 0;
+    overflow: hidden;
+    background: transparent;
+}
+
+.sobre .image {
+    width: 100%;
+    min-height: 320px;
+    background-image: url('./images/about.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+.sobre .text {
+    background-image: url('./images/bg_4.jpg');
+    color: #fff;
+    padding: 28px 18px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+.sobre .text .text-inner {
+    max-width: 720px;
+}
+
+.sobre .text h2 {
+    font-size: 28px;
+    margin: 0 0 12px;
+    font-family: "Josefin Sans", Arial, sans-serif;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #fff;
+}
+
+.sobre .text h2 span { color: #fac564; }
+
+.sobre .text p {
+    color: rgba(255,255,255,0.9);
+    line-height: 1.8;
+    font-size: 15px;
+    margin: 0;
+}
+
+/* Mobile-first: Contact section */
+.cont {
+    max-width: 920px;
+    margin: 0 auto;
+}
+
+.fone {
+    background: #0a0a0a;
+    padding: 18px;
+    display: grid;
+    grid-template-columns: 48px 1fr;
+    gap: 12px 14px;
+    align-items: center;
+    color: #fff;
+    border-radius: 6px;
+}
+
+.fone .icon span {
+    display: inline-flex;
+    width: 44px;
+    height: 44px;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+}
+
+.fone .icon span img {
+    width: 18px;
+    height: auto;
+}
+
+.fone .text h3 {
+    margin: 0;
+    font-size: 18px;
+    color: #fff;
+}
+
+.fone .text p {
+    margin: 6px 0 0;
+    color: rgba(255,255,255,0.8);
+    font-size: 14px;
+}
+
+.social-icon {
+    display: flex;
+    justify-content: center;
+    gap: 18px;
+    padding: 12px 0;
+    background: #fac564;
+    list-style: none;
+}
+
+.social-icon li { display: inline-block; }
+
+.social-icon li a img {
+    width: 20px;
+    opacity: 0.95;
+}
+
+/* Mobile-first: estilo do menu / seção de pizzas fora das media queries */
+.about-header {
+    background-size: cover;
+    background-position: center;
+    padding: 48px 0 10px;
+    text-align: center;
+}
+
+.about-header div h2 {
+    font-size: 28px;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin: 0 0 10px;
+    letter-spacing: 1px;
+    color: #fff;
+}
+
+.about-header div p {
+    font-family: "Poppins", Arial, sans-serif;
+    font-size: 15px;
+    max-width: 720px;
+    margin: 0 auto 18px;
+    color: rgba(255,255,255,0.85);
+    line-height: 1.6;
+}
+
+.pizzas-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+    padding: 18px 12px 60px;
+    max-width: 920px;
+    margin: 0 auto;
+}
+
+.pizza-card {
+    display: flex;
+    flex-direction: row;
+    background-color: #1a1a1a;
+    border-radius: 8px;
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.pizza-image {
+    width: 48%;
+    background-size: cover;
+    background-position: center;
+    min-height: 180px;
+    flex-shrink: 0;
+}
+
+.pizza-content {
+    width: 52%;
+    padding: 18px 16px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background: linear-gradient(180deg, rgba(0,0,0,0.0), rgba(0,0,0,0.0));
+}
+
+.pizza-content h3 {
+    font-size: 18px;
+    line-height: 1.2;
+    font-weight: 600;
+    color: #fff;
+    margin: 0 0 8px;
+}
+
+.pizza-content p {
+    font-size: 14px;
+    color: rgba(255,255,255,0.85);
+    margin: 0 0 12px;
+    line-height: 1.6;
+}
+
+.pizza-footer {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 12px;
+}
+
+.price {
+    font-size: 16px;
+    color: #fac564;
+    font-weight: 600;
+}
+
+.btn-order {
+    background-color: transparent;
+    border: 2px solid #fff;
+    color: #fff;
+    padding: 8px 12px;
+    text-decoration: none;
+    font-size: 0.9rem;
+    border-radius: 4px;
+}
+
+.btn-order:hover {
+    background-color: #fac564;
+    border-color: #fac564;
+    color: #000;
+}
+
+/* Mobile-first: Services section */
+#services {
+    background-image: url('./images/food.png'); /* mustard background like reference */
+    padding: 36px 12px 60px;
+    color: rgba(0,0,0,0.85);
+}
+
+#services .services-inner {
+    max-width: 920px;
+    margin: 0 auto;
+    padding: 0 12px;
+    text-align: center;
+}
+
+#services h2 {
+    font-size: 28px;
+    margin: 0 0 12px;
+    font-family: "Josefin Sans", Arial, sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: #111;
+}
+
+#services .lead {
+    color: rgba(0,0,0,0.6);
+    max-width: 720px;
+    margin: 0 auto 28px;
+    font-size: 15px;
+    line-height: 1.6;
+}
+
+.services-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 26px;
+    align-items: center;
+}
+
+.service-card {
+    padding: 28px 18px;
+    background: rgba(255,255,255,0.06);
+    border-radius: 8px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+}
+
+.icon-box {
+    width: 96px;
+    height: 96px;
+    border-radius: 12px;
+    border: 2px dashed rgba(0,0,0,0.12);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(255,255,255,0.06);
+}
+
+.icon-emoji { font-size: 36px; }
+
+.service-card h3 {
+    margin: 0;
+    font-size: 16px;
+    color: #111;
+}
+
+.service-card p {
+    color: rgba(0,0,0,0.65);
+    font-size: 14px;
+    line-height: 1.6;
+    margin: 0;
+}
+
 
 
 @media (min-width: 768px) {
